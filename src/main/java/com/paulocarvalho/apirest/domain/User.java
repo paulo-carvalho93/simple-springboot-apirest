@@ -20,6 +20,13 @@ public class User implements Serializable{
 		
 	}
 	
+	public User(String id, String name, String email) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.email = email;
+	}
+	
 	public String getId() {
 		return id;
 	}
@@ -68,13 +75,6 @@ public class User implements Serializable{
 		} else if (!id.equals(other.id))
 			return false;
 		return true;
-	}
-
-	public User(String id, String name, String email) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.email = email;
 	}
 
 }
